@@ -9,37 +9,20 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: '',
+  title: 'Hello there, I am',
   name: 'Joel Rainwater',
-  subtitle: 'I\'m a Jack-of-all-codes...',
+  subtitle: 'This is the developer you are looking for',
   cta: '',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'kristy-joel-coast.jpg',
-  paragraphOne: 'I have been dabbling in web development for 20 years now, and working in it professionally in some fashion for over 10 years. Throughout my years of experience I have worked in multiple areas - frontend, backend, and fullstack. While I tend to favor the backend, I have been growing more interested in frontend with the advancements in the JavaScript world.',
-  paragraphTwo: 'If I had to pick an area of expertise, it would be in the e-commerce world, specifically working in Magento. However, I enjoy learning new technologies, and continously growing my knowledge and skillset.',
-  paragraphThree: '',
-  // paragraphThree: 'Technologies I am most experienced in:',
-  // skills: [
-  //   {
-  //     language: "PHP",
-  //     frameworks: ["WordPress", "Magento 1 & 2", "Laravel"]
-  //   },
-  //   {
-  //     language: "JavaScript",
-  //     frameworks: ["Vanilla", "Vue", "Node", "*cough* jQuery *cough*", "and learning React"]
-  //   },
-  //   {
-  //     language: "SQL",
-  //     frameworks: ["MySQL"]
-  //   },
-  // ],
-  // paragraphFour: 'Technologies I have worked in at least once:',
-  // limitedExperience: ["ElasticSearch", "Python", "ReactNative", "C#", "Swift"],
-  // resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
-  resume: 'https://www.linkedin.com/in/joelrainwater/'
+  paragraphOne: 'I have been dabbling in web development for 20 years now, and working in it professionally in some fashion for over 10 years. Throughout my years of experience I have worked in multiple areas - frontend, backend, and everywhere in between. While I tend to favor the backend, I have been growing more interested in frontend with the advancements in the JavaScript world.',
+  paragraphTwo: 'I love experiencing new places with my wife, playing D&D, consuming comic book media (comics, movies, series), and building digital things. Yes, for fun I truly do enjoy coding; it\'s just so satisfying.',
+  paragraphThree: 'Resumes are short, see my LinkedIn for a more detailed view of my experience; or keep scrolling for an overview of some of my favorite projects.',
+  resume: 'https://drive.google.com/file/d/1tOWvJ3c4irT6UGzP_D4mmC7IP9-pCen4/view?usp=sharing',
+  linkedin: 'https://www.linkedin.com/in/joelrainwater/'
 };
 
 // PROJECTS DATA

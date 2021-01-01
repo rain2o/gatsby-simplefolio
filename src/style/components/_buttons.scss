@@ -64,6 +64,7 @@
 .cta-btn--resume {
   color: $white-color;
   border: 2px solid $white-color;
+  margin-right: 15px;
 
   &::after {
     background: $white-color;
@@ -76,6 +77,13 @@
     &::after {
       width: 100%;
     }
+  }
+}
+.cta-btn--linkedin {
+  color: $white-color;
+
+  &:hover {
+    transform: translateX(2px);
   }
 }
 

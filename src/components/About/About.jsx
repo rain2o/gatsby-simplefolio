@@ -12,10 +12,8 @@ const About = () => {
     paragraphOne,
     paragraphTwo,
     paragraphThree,
-    paragraphFour,
-    skills,
-    limitedExperience,
-    resume
+    resume,
+    linkedin
   } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
@@ -57,29 +55,28 @@ const About = () => {
                 {paragraphThree &&
                   <p className="about-wrapper__info-text">{paragraphThree}</p>
                 }
-                {/* <ul className="about-wrapper__info-list">
-                  {skills.map((skill) => {
-                    const { language, frameworks } = skill
-                    return (
-                      <li class="about-wrapper__info-list-item">
-                        <strong>{language}: </strong> {frameworks.join(', ')}
-                      </li>
-                    )
-                  })}
-                </ul>
-                <p className="about-wrapper__info-text">
-                  {paragraphFour || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p> */}
-                {resume && (
+                {(resume || linkedin) && (
                   <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
+                    {resume && 
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--resume"
+                        href={resume}
+                      >
+                        Resume
+                      </a>
+                    }
+                    {linkedin &&
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--linkedin text-color-white"
+                        href={linkedin}
+                      >
+                        LinkedIn
+                      </a>
+                    }
                   </span>
                 )}
               </div>
