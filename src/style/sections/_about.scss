@@ -47,7 +47,7 @@
         align-items: center;
       }
 
-      &-text {
+      &-text, &-list, &-list-item {
         text-align: left;
 
         @include respond(tab-port) {

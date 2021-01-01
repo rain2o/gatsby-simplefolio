@@ -7,7 +7,16 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const {
+    img,
+    paragraphOne,
+    paragraphTwo,
+    paragraphThree,
+    paragraphFour,
+    skills,
+    limitedExperience,
+    resume
+  } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -45,9 +54,22 @@ const About = () => {
                   {paragraphTwo ||
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                 </p>
+                {paragraphThree &&
+                  <p className="about-wrapper__info-text">{paragraphThree}</p>
+                }
+                {/* <ul className="about-wrapper__info-list">
+                  {skills.map((skill) => {
+                    const { language, frameworks } = skill
+                    return (
+                      <li class="about-wrapper__info-list-item">
+                        <strong>{language}: </strong> {frameworks.join(', ')}
+                      </li>
+                    )
+                  })}
+                </ul>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p>
+                  {paragraphFour || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                </p> */}
                 {resume && (
                   <span className="d-flex mt-3">
                     <a

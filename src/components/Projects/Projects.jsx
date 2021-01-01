@@ -28,11 +28,11 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, role, stack, url, repo, img, id } = project;
 
             return (
               <Row key={id}>
-                <Col lg={4} sm={12}>
+                <Col lg={5} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -43,26 +43,47 @@ const Projects = () => {
                     <div className="project-wrapper__text">
                       <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
                       <div>
-                        <p>
-                          {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                        </p>
-                        <p className="mb-4">{info2 || ''}</p>
+                        {role && <p className="mb4"><strong>Role: </strong>{role}</p>}
+                        {info && <p className="mb4"><strong>Details: </strong>{info}</p>}
+                        {stack &&
+                          (<p className="mb4">
+                            <strong>Stack: </strong>
+                            {stack.map((tech, i) => {
+                              const { name, url } = tech
+                              return (
+                                <span key={name}>
+                                  {i > 0 && ", "}
+                                  {url &&
+                                    (<a
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-color-main"
+                                      href={url}
+                                    >{name}</a>) || <span>{name}</span>
+                                  }
+                                </span>
+                              )
+                            })}
+                          </p>)
+                        }
+                        {info2 && <p className="mb-4">{info2 || ''}</p>}
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
+                      {url && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url}
+                        >
+                          See Live
+                        </a>
+                      )}
 
                       {repo && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          className={url && 'cta-btn text-color-main' || 'cta-btn cta-btn--hero'}
                           href={repo}
                         >
                           Source Code
@@ -71,7 +92,7 @@ const Projects = () => {
                     </div>
                   </Fade>
                 </Col>
-                <Col lg={8} sm={12}>
+                <Col lg={7} sm={12}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
