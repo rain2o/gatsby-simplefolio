@@ -1,4 +1,16 @@
+const siteUrl = process.env.URL || process.env.DEPLOY_URL || `https://joel.rainwater.io`;
+
 module.exports = {
+  siteMetadata: {
+    title: `Joel Rainwater | Developer`,
+    author: `Joel Rainwater`,
+    description: `Jack-of-all-codes: I'm a diverse developer, trying to learn something new every day.`,
+    siteUrl,
+    social: {
+      twitter: `Joel_Rain2o`,
+    },
+    keywords: ['web developer', 'vuejs', 'full stack developer'],
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
@@ -35,7 +47,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "UA-100828879-2",
+        trackingId: 'UA-100828879-2',
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional
@@ -46,7 +58,7 @@ module.exports = {
         exclude: [],
         // Delays sending pageview hits on route update (in milliseconds)
         pageTransitionDelay: 0,
-        cookieDomain: "rainwater.io",
+        cookieDomain: 'rainwater.io',
       },
     },
   ],

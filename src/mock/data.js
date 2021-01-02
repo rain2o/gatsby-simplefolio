@@ -2,11 +2,6 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  domain: 'https://joel.rainwater.io',
-  ogImage: {
-    source: 'kristy-joel-coast.jpg',
-    alt: 'Me with my wife overlooking the Cote Azure in South France.',
-  },
   title: 'Joel Rainwater | Developer', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
   description:
