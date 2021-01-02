@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
-  const { site } = useStaticQuery(
+  const { site, images } = useStaticQuery(
     graphql`
       query {
         site {
@@ -14,6 +14,25 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
             author
             keywords
             siteUrl
+            image {
+              src
+              width
+              height
+              alt
+            }
+          }
+        }
+        images: allFile {
+          edges {
+            node {
+              relativePath
+              name
+              childImageSharp {
+                fixed(width: 650) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }
@@ -22,7 +41,9 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
 
   const metaDescription = description || site.siteMetadata.description;
   const siteTitle = title || site.siteMetadata.title;
-  const image = metaImage && metaImage.src ? `${site.siteMetadata.siteUrl}${metaImage.src}` : null;
+  const ogImage = metaImage && metaImage.src ? metaImage : site.siteMetadata.image;
+  const imageObject = images.edges.find((n) => n.node.relativePath.includes(ogImage.src));
+  const image = `${site.siteMetadata.siteUrl}${imageObject.node.childImageSharp.fixed.src}`;
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
 
   return (
@@ -31,7 +52,6 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
         lang,
       }}
       title={siteTitle}
-      //   titleTemplate={`%s | ${site.siteMetadata.title}`}
       link={
         canonical
           ? [
@@ -77,7 +97,7 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
         },
       ]
         .concat(
-          metaImage
+          ogImage
             ? [
                 {
                   property: 'og:image',
@@ -85,11 +105,15 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
                 },
                 {
                   property: 'og:image:width',
-                  content: metaImage.width,
+                  content: ogImage.width,
                 },
                 {
                   property: 'og:image:height',
-                  content: metaImage.height,
+                  content: ogImage.height,
+                },
+                {
+                  property: 'og:image:alt',
+                  content: ogImage.alt,
                 },
                 {
                   name: 'twitter:card',

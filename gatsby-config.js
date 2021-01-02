@@ -10,6 +10,12 @@ module.exports = {
       twitter: `Joel_Rain2o`,
     },
     keywords: ['web developer', 'vuejs', 'full stack developer'],
+    image: {
+      src: 'og-image.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'My wife and I overlooking the Cote Azure in South France.',
+    },
   },
   plugins: [
     `gatsby-plugin-sass`,
