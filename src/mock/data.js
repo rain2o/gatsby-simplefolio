@@ -12,7 +12,7 @@ export const headData = {
 export const heroData = {
   title: 'Hello there, I am',
   name: 'Joel Rainwater',
-  subtitle: 'This is the developer you are looking for',
+  subtitle: 'This is the developer you are looking for.',
   cta: '',
 };
 
@@ -20,12 +20,12 @@ export const heroData = {
 export const aboutData = {
   img: 'kristy-joel-coast.jpg',
   paragraphOne:
-    'I have been dabbling in web development for 20 years now, and working in it professionally in some fashion for over 10 years. Throughout my years of experience I have worked in multiple areas - frontend, backend, and everywhere in between. While I tend to favor the backend, I have been growing more interested in frontend with the advancements in the JavaScript world.',
+    'I have been dabbling in web development for 20 years now, and working in it professionally in some fashion for over 10 years. Throughout my years of experience I have worked in multiple areas - frontend, backend, and everywhere in between. While I tend to favor backend development, I can work in all areas, and my interest in frontend development has been significantly increasing with the advancements in the JavaScript world.',
   paragraphTwo:
     "I love experiencing new places with my wife, playing D&D, consuming comic book media (comics, movies, series), and building digital things. Yes, for fun I truly do enjoy coding; it's just so satisfying.",
   paragraphThree:
     'Resumes are short, see my LinkedIn for a more detailed view of my experience; or keep scrolling for an overview of some of my favorite projects.',
-  resume: 'https://static.rainwater.io/resume',
+  resume: '/Joel_Rainwater_Resume.pdf',
   linkedin: 'https://www.linkedin.com/in/joelrainwater/',
 };
 
@@ -50,103 +50,6 @@ export const projectsData = [
       { name: 'MySQL', url: 'https://www.mysql.com/' },
     ],
     url: 'https://shop.netatmo.com/',
-    repo: '', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'tpltt.png',
-    title: 'Tout Pour Le TouTou',
-    info:
-      'I joined mid-project to take over the technical project management, and eventually taking over all technical responsibilities for this startup. It is a new website and web app build for connecting pet owners with pet service providers.',
-    info2: 'The web app is still in progress, to be launched soon...',
-    role: 'CTO (contract)',
-    stack: [
-      { name: 'Laravel', url: 'https://laravel.com/' },
-      { name: 'Bootstrap', url: 'https://getbootstrap.com/' },
-      { name: 'MySQL', url: 'https://www.mysql.com/' },
-    ],
-    url: 'https://toutpourletoutou.com/',
-    repo: '', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'portfolio.png',
-    title: 'This Portfolio',
-    info:
-      "This was a learning experience for me, to build a static site using React and Netlify. I did start with a theme, because I am not strong in design, and didn't want to waste hours trying to come up with a design for my portfolio.",
-    info2: '',
-    role: 'Developer',
-    stack: [
-      { name: 'Gatsby', url: 'https://www.gatsbyjs.com/' },
-      {
-        name: 'gatsby-simplefolio',
-        url: 'https://www.gatsbyjs.com/starters/cobidev/gatsby-simplefolio',
-      },
-      { name: 'React', url: 'https://reactjs.org/' },
-      { name: 'Netlify', url: 'https://www.netlify.com/' },
-    ],
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'hdywtdt.png',
-    title: 'How Do You Want To Do This?',
-    info:
-      'This is a fun project idea I had, to randomly watch a "How do you want to do this?" moment from the internet show Critical Role. It was also a way for me to spend some more time learning React.',
-    info2: '',
-    role: 'Developer',
-    stack: [
-      { name: 'React', url: 'https://reactjs.org/' },
-      { name: 'Netlify', url: 'https://www.netlify.com/' },
-    ],
-    url: 'https://hdywtdt.netlify.app/',
-    repo: 'https://github.com/rain2o/how-do-you-want-to-do-this', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'fots.png',
-    title: 'Friends of the Smokies',
-    info:
-      'The site was built in WordPress and Foundation, and uses WooCommerce for the Donations. It allows subscription donations or one-time donations as well as a dynamic pricing model allowing users to choose the amount or enter their own custom amount. As part of this project I developed a custom WordPress plugin for Pyxl that consumes Instagram’s API and provides it to theme developers in a clean, developer-friendly way. It was inspired by the oAuth Twitter Feed for Developers plugin.',
-    info2: '',
-    role: 'Lead Developer',
-    stack: [
-      { name: 'WordPress', url: 'https://wordpress.org/' },
-      { name: 'WooCommerce', url: 'https://woocommerce.com/' },
-      { name: 'Foundation', url: 'https://get.foundation/' },
-    ],
-    url: 'https://friendsofthesmokies.org/',
-    repo: '', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'rcc.jpg',
-    title: 'Regal Crown Club',
-    info:
-      'In 2016 I took over as the technical lead for all Regal Entertainment work for which Pyxl was responsible. I was the project architect and lead developer in the RCC rebuild, leading a team of 3 developers. It was built using the Enterprise Edition of Magento 1. The primary challenge was to provide a seamless user experience from Regal’s primary domain RegMovies to the RCC Store. Behind the scenes we integrated with Regal’s proprietary API for user and credits management. A number of custom 3rd party integrations were built as well for features such as fulfillment and content creation. Some of the features built include the Movie entity complete with product and category relations and content creation via API integrations, a number of custom product types with different user experiences, a digital, single page checkout process for certain products, and split payment methods for Credits vs Dollars.',
-    info2: '',
-    role: 'Architect & Lead Developer',
-    stack: [
-      { name: 'Magento 1 Enterprise', url: 'https://magento.com/' },
-      { name: 'Foundation', url: 'https://get.foundation/' },
-    ],
-    url: 'http://regalcrownclub.regmovies.com/',
-    repo: '', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'momsource.png',
-    title: 'MomSource Network',
-    info:
-      'The application serves as a platform for moms who have left the workforce and are having difficulty jumping back in, providing access to job listings from companies interested in working with them as well as dedicated recruiters to help find the right job. The application was designed and developed by Pyxl on the Laravel framework. I was brought on to the project as a technical lead towards the end as some events led to an unfortunate situation in the project. Once brought on I helped bring the project back on track, provided some final development and bug fixes, participated in a 20 hour live QA session with a team of developers, and worked with the client’s CTO to bring both teams back to the same page for the final project launch.',
-    info2: '',
-    role: 'Technical Lead, Developer & QA',
-    stack: [
-      { name: 'Laravel', url: 'https://laravel.com/' },
-      { name: 'Foundation', url: 'https://get.foundation/' },
-    ],
-    url: 'https://app.momsourcenetwork.com/landing',
     repo: '', // if no repo, the button will not show up
   },
   {
@@ -184,17 +87,49 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'teamhealth.png',
-    title: 'TeamHealth',
+    img: 'tpltt.png',
+    title: 'Tout Pour Le TouTou',
     info:
-      'I provided ongoing support and new feature development. The site was built (not by me) using Sitecore as the CMS and React as a separated front-end layer. Ongoing support involved updating existing features and building new features in both React and Sitecore.',
+      'I joined mid-project to take over the technical project management, and eventually taking over all technical responsibilities for this startup. It is a new website and web app build for connecting pet owners with pet service providers.',
+    info2: 'The web app is still in progress, to be launched soon...',
+    role: 'CTO (contract)',
+    stack: [
+      { name: 'Laravel', url: 'https://laravel.com/' },
+      { name: 'Bootstrap', url: 'https://getbootstrap.com/' },
+      { name: 'MySQL', url: 'https://www.mysql.com/' },
+    ],
+    url: 'https://toutpourletoutou.com/',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'fots.png',
+    title: 'Friends of the Smokies',
+    info:
+      'The site was built in WordPress and Foundation, and uses WooCommerce for the Donations. It allows subscription donations or one-time donations as well as a dynamic pricing model allowing users to choose the amount or enter their own custom amount. As part of this project I developed a custom WordPress plugin for Pyxl that consumes Instagram’s API and provides it to theme developers in a clean, developer-friendly way. It was inspired by the oAuth Twitter Feed for Developers plugin.',
     info2: '',
     role: 'Lead Developer',
     stack: [
-      { name: 'Sitecore', url: 'https://www.sitecore.com/' },
-      { name: 'React', url: 'https://reactjs.org/' },
+      { name: 'WordPress', url: 'https://wordpress.org/' },
+      { name: 'WooCommerce', url: 'https://woocommerce.com/' },
+      { name: 'Foundation', url: 'https://get.foundation/' },
     ],
-    url: 'https://www.teamhealth.com/',
+    url: 'https://friendsofthesmokies.org/',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'momsource.png',
+    title: 'MomSource Network',
+    info:
+      'The application serves as a platform for moms who have left the workforce and are having difficulty jumping back in, providing access to job listings from companies interested in working with them as well as dedicated recruiters to help find the right job. The application was designed and developed by Pyxl on the Laravel framework. I was brought on to the project as a technical lead towards the end as some events led to an unfortunate situation in the project. Once brought on I helped bring the project back on track, provided some final development and bug fixes, participated in a 20 hour live QA session with a team of developers, and worked with the client’s CTO to bring both teams back to the same page for the final project launch.',
+    info2: '',
+    role: 'Technical Lead, Developer & QA',
+    stack: [
+      { name: 'Laravel', url: 'https://laravel.com/' },
+      { name: 'Foundation', url: 'https://get.foundation/' },
+    ],
+    url: 'https://app.momsourcenetwork.com/landing',
     repo: '', // if no repo, the button will not show up
   },
   {
@@ -212,6 +147,72 @@ export const projectsData = [
     url: 'https://www.ecu.org/',
     repo: '', // if no repo, the button will not show up
   },
+  {
+    id: nanoid(),
+    img: 'teamhealth.png',
+    title: 'TeamHealth',
+    info:
+      'I provided ongoing support and new feature development. The site was built (not by me) using Sitecore as the CMS and React as a separated front-end layer. Ongoing support involved updating existing features and building new features in both React and Sitecore.',
+    info2: '',
+    role: 'Lead Developer',
+    stack: [
+      { name: 'Sitecore', url: 'https://www.sitecore.com/' },
+      { name: 'React', url: 'https://reactjs.org/' },
+    ],
+    url: 'https://www.teamhealth.com/',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'portfolio.png',
+    title: 'This Portfolio',
+    info:
+      "This was a learning experience for me, to build a static site using React and Netlify. I did start with a theme, because I am not strong in design, and didn't want to waste hours trying to come up with a design for my portfolio.",
+    info2: '',
+    role: 'Developer',
+    stack: [
+      { name: 'Gatsby', url: 'https://www.gatsbyjs.com/' },
+      {
+        name: 'gatsby-simplefolio',
+        url: 'https://www.gatsbyjs.com/starters/cobidev/gatsby-simplefolio',
+      },
+      { name: 'React', url: 'https://reactjs.org/' },
+      { name: 'Netlify', url: 'https://www.netlify.com/' },
+    ],
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'hdywtdt.png',
+    title: 'How Do You Want To Do This?',
+    info:
+      'This is a fun project idea I had, to randomly watch a "How do you want to do this?" moment from the internet show Critical Role. It was also a way for me to spend some more time learning React.',
+    info2: '',
+    role: 'Developer',
+    stack: [
+      { name: 'React', url: 'https://reactjs.org/' },
+      { name: 'Netlify', url: 'https://www.netlify.com/' },
+    ],
+    url: 'https://hdywtdt.netlify.app/',
+    repo: 'https://github.com/rain2o/how-do-you-want-to-do-this', // if no repo, the button will not show up
+  },
+  // rcc is down...
+  // {
+  //   id: nanoid(),
+  //   img: 'rcc.jpg',
+  //   title: 'Regal Crown Club',
+  //   info:
+  //     'In 2016 I took over as the technical lead for all Regal Entertainment work for which Pyxl was responsible. I was the project architect and lead developer in the RCC rebuild, leading a team of 3 developers. It was built using the Enterprise Edition of Magento 1. The primary challenge was to provide a seamless user experience from Regal’s primary domain RegMovies to the RCC Store. Behind the scenes we integrated with Regal’s proprietary API for user and credits management. A number of custom 3rd party integrations were built as well for features such as fulfillment and content creation. Some of the features built include the Movie entity complete with product and category relations and content creation via API integrations, a number of custom product types with different user experiences, a digital, single page checkout process for certain products, and split payment methods for Credits vs Dollars.',
+  //   info2: '',
+  //   role: 'Architect & Lead Developer',
+  //   stack: [
+  //     { name: 'Magento 1 Enterprise', url: 'https://magento.com/' },
+  //     { name: 'Foundation', url: 'https://get.foundation/' },
+  //   ],
+  //   url: 'http://regalcrownclub.regmovies.com/',
+  //   repo: '', // if no repo, the button will not show up
+  // },
 ];
 
 // CONTACT DATA

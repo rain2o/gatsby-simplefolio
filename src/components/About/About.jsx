@@ -43,12 +43,7 @@ const About = () => {
                 {(resume || linkedin) && (
                   <span className="d-flex mt-3">
                     {resume && (
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--resume"
-                        href={resume}
-                      >
+                      <a className="cta-btn cta-btn--resume" href={resume} download>
                         Resume
                       </a>
                     )}
