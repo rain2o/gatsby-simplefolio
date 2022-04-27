@@ -16,6 +16,16 @@
       margin-bottom: 0rem;
     }
 
+    .filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .filter {
+        margin-bottom: 1rem;
+      }
+    }
+
     .row {
       margin-bottom: 8rem;
 
