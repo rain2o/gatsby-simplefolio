@@ -33,6 +33,56 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'status-tracker.png',
+    title: 'Status Tracker',
+    info:
+      'I built this SaaS platform in an attempt to offer a solution for service providers (such as mechanics) to offer an online order tracking platform for their customers. More details of the technology used is available in a post on my blog.',
+    info2: '',
+    role: 'Founder & Developer',
+    stack: [
+      { name: 'Next.js', url: 'https://nextjs.org/' },
+      { name: 'React', url: 'https://reactjs.org/' },
+      { name: 'Node', url: 'https://nodejs.org/en/' },
+      { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+      { name: 'GraphQL', url: 'https://graphql.org/' },
+      { name: 'Nexus', url: 'https://nexusjs.org/' },
+      { name: 'Passport', url: 'https://www.passportjs.org/' },
+      { name: 'Stripe', url: 'https://stripe.com/' },
+      { name: 'Postmark', url: 'https://postmarkapp.com/' },
+      { name: 'Amazon SNS', url: 'https://aws.amazon.com/sns/' },
+      { name: 'Kutt', url: 'https://kutt.it/' },
+      { name: 'Quirrel', url: 'https://quirrel.dev/' },
+      { name: 'Supabase', url: 'https://supabase.io/' },
+      { name: 'Prisma', url: 'https://www.prisma.io/' },
+    ],
+    url: 'https://statustracker.app/',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'my-cosplace.png',
+    title: 'My Cosplace',
+    info:
+      'A simple SaaS platform built for the cosplay community. It offers a basic site builder to build a single page virtual portfolio with custom branding, a custom subdomain and a QR code which points to that subdomain, and the option to build and order business cards using our templates, which includes the QR code on the card.',
+    info2: '',
+    role: 'Founder & Developer',
+    stack: [
+      { name: 'Next.js', url: 'https://nextjs.org/' },
+      { name: 'React', url: 'https://reactjs.org/' },
+      { name: 'Node', url: 'https://nodejs.org/en/' },
+      { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+      { name: 'Tailwind', url: 'https://tailwindcss.com/' },
+      { name: 'Stripe', url: 'https://stripe.com/' },
+      { name: 'Postmark', url: 'https://postmarkapp.com/' },
+      { name: 'Supabase', url: 'https://supabase.io/' },
+      { name: 'Redux', url: 'https://redux.js.org/' },
+      { name: 'Puppeteer', url: 'https://puppeteer.github.io/puppeteer/' },
+    ],
+    url: 'https://www.mycosplace.com/',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'netatmo.png',
     title: 'Netatmo Shop',
     info:
@@ -40,11 +90,12 @@ export const projectsData = [
     info2: '',
     role: 'Lead developer & architect',
     stack: [
+      { name: 'Vue', url: 'https://vuejs.org/' },
       { name: 'Vue Storefront', url: 'https://www.vuestorefront.io/' },
       { name: 'ElasticSearch', url: 'https://www.elastic.co/' },
       { name: 'Kibana', url: 'https://www.elastic.co/kibana' },
       { name: 'Bulma', url: 'https://bulma.io/' },
-      { name: 'Typescript', url: 'https://www.typescriptlang.org/' },
+      { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
       { name: 'Redis', url: 'https://redis.io/' },
       { name: 'Magento 2', url: 'https://devdocs.magento.com/' },
       { name: 'MySQL', url: 'https://www.mysql.com/' },
@@ -172,15 +223,26 @@ export const projectsData = [
     role: 'Developer',
     stack: [
       { name: 'Gatsby', url: 'https://www.gatsbyjs.com/' },
-      {
-        name: 'gatsby-simplefolio',
-        url: 'https://www.gatsbyjs.com/starters/cobidev/gatsby-simplefolio',
-      },
       { name: 'React', url: 'https://reactjs.org/' },
-      { name: 'Netlify', url: 'https://www.netlify.com/' },
     ],
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'blog.png',
+    title: 'My Blog',
+    info:
+      'I built a simple blog to post technical articles that I periodically write (cross-posted on dev.to), and used this as an opportunity to test out VuePress.',
+    info2: '',
+    role: 'Developer',
+    stack: [
+      { name: 'Vue', url: 'https://vuejs.org/' },
+      { name: 'VuePress', url: 'https://vuepress.vuejs.org/' },
+      { name: 'Vuetify', url: 'https://vuetifyjs.com/en/' },
+    ],
+    url: 'https://blog.rainwater.io/',
+    repo: 'https://github.com/rain2o/static-blog', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -190,12 +252,40 @@ export const projectsData = [
       'This is a fun project idea I had, to randomly watch a "How do you want to do this?" moment from the internet show Critical Role. It was also a way for me to spend some more time learning React.',
     info2: '',
     role: 'Developer',
-    stack: [
-      { name: 'React', url: 'https://reactjs.org/' },
-      { name: 'Netlify', url: 'https://www.netlify.com/' },
-    ],
-    url: 'https://hdywtdt.netlify.app/',
+    stack: [{ name: 'React', url: 'https://reactjs.org/' }],
+    url: 'https://hdywtdt.tube/',
     repo: 'https://github.com/rain2o/how-do-you-want-to-do-this', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'dnd-character.jpg',
+    title: 'What Kind of D&D Character Would You Be?',
+    info:
+      'A rebuild of an existing survey to discover what type of D&D character you would be. Rebuilt it to be mobile friendly and easier to use.',
+    info2: '',
+    role: 'Developer',
+    stack: [
+      { name: 'Vue', url: 'https://vuejs.org/' },
+      { name: 'Tailwind', url: 'https://tailwindcss.com/' },
+    ],
+    url: 'https://dnd-character.me/',
+    repo: 'https://github.com/rain2o/dnd-character', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'unity-weather.png',
+    title: 'Unity Weather mobile app',
+    info:
+      'A native mobile app for iOS and Android. This is a simple weather app, but it displays all measurements in both metric and imperial. I built this to make it easier as we transitioned from America to Europe.',
+    info2: '',
+    role: 'Developer',
+    stack: [
+      { name: 'React Native', url: 'https://reactnative.dev/' },
+      { name: 'Expo', url: 'https://expo.dev/' },
+      { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+    ],
+    url: 'https://www.unityweather.com/',
+    repo: '', // if no repo, the button will not show up
   },
   // rcc is down...
   // {
