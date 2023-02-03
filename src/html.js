@@ -20,6 +20,11 @@ export default function HTML({
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         {headComponents}
+        <script
+          src="https://beamanalytics.b-cdn.net/beam.min.js"
+          data-token="e0b561b5-ddbf-4296-b619-54949b3ee24a"
+          async
+        />
       </head>
       <body {...bodyAttributes}>
         {preBodyComponents}

@@ -2,7 +2,7 @@ const siteUrl = process.env.URL || process.env.DEPLOY_URL || `https://joel.rainw
 
 module.exports = {
   siteMetadata: {
-    title: `Joel Rainwater | Developer`,
+    title: `Joel Rainwater | Software Engineer`,
     author: `Joel Rainwater`,
     description: `Jack-of-all-codes: I'm a diverse developer, trying to learn something new every day.`,
     siteUrl,
@@ -14,7 +14,7 @@ module.exports = {
       src: 'og-image.jpg',
       width: 1200,
       height: 630,
-      alt: 'My wife and I overlooking the Cote Azure in South France.',
+      alt: 'My wife and me overlooking the Cote Azure in South France.',
     },
   },
   plugins: [
